@@ -6,7 +6,7 @@ type Props = {
   addClass?: string;
   children?: any;
   onClick?: () => void;
-  type: "primary" | "secondary" | "danger";
+  type?: "primary" | "secondary" | "danger";
   disabled?: boolean;
 };
 
