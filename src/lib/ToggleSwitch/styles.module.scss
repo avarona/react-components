@@ -1,0 +1,27 @@
+.toggleSwitch {
+  display: inline-flex;
+  align-items: center;
+  background: grey;
+  border: 4px solid black;
+  border-radius: 25px;
+  left: 4px;
+  cursor: pointer;
+}
+
+.slider {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.checkbox {
+  display: none;
+  width: 0;
+  height: 0;
+
+  &:checked + .slider {
+    transform: translateX(100%);
+  }
+}

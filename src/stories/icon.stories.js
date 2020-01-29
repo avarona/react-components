@@ -7,11 +7,11 @@ import alarm128 from "../assets/alarm/128x128.png";
 import alarm256 from "../assets/alarm/256x256.png";
 
 export default {
-  title: "Icon",
+  title: "Components",
   component: Icon
 };
 
-export const IconStory = () => (
+export const _Icon = () => (
   <>
     <Icon img={alarm16} alt='alarm clock' />
     <Icon img={alarm32} alt='alarm clock' />

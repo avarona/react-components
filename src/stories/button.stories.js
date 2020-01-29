@@ -3,11 +3,11 @@ import { action } from "@storybook/addon-actions";
 import { Button } from "../lib";
 
 export default {
-  title: "Button",
+  title: "Components",
   component: Button
 };
 
-export const ButtonStory = () => (
+export const _Button = () => (
   <>
     <Button onClick={action("clicked")} type='primary'>
       Primary
