@@ -1,5 +1,5 @@
 {
-  "name": "react-components-library",
+  "name": "@avarona/react-components",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/avarona/react-components-library"
+    "url": "https://github.com/avarona/react-components"
   },
   "author": "avarona",
   "scripts": {
