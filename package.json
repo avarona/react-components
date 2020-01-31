@@ -1,6 +1,6 @@
 {
-  "name": "react-library-components",
-  "version": "0.1.2",
+  "name": "react-components-library",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/avarona/component-library"
+    "url": "https://github.com/avarona/react-components-library"
   },
   "author": "avarona",
   "scripts": {
@@ -35,12 +35,7 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "typescript": "~3.7.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
@@ -49,12 +44,16 @@
     "@storybook/addons": "^5.3.9",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.9",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "@types/classnames": "^2.2.9",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/storybook__react": "^5.2.1",
+    "typescript": "~3.7.2",
     "classnames": "^2.2.6",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
