@@ -1,6 +1,6 @@
 import * as React from "react";
 import classnames from "classnames";
-import styles from "./styles.module.scss";
+import styles from "./styles.module.css";
 
 type Props = {
   addClass?: string;
