@@ -20,8 +20,8 @@
   display: none;
   width: 0;
   height: 0;
-}
 
-.checkbox:checked + .slider {
-  transform: translateX(100%);
+  &:checked + .slider {
+    transform: translateX(100%);
+  }
 }
