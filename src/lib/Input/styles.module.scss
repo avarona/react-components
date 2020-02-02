@@ -1,0 +1,38 @@
+.input {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  input[type="text"] {
+    outline: none;
+    height: 40px;
+    width: 100%;
+    padding: 0 4px 0 8px;
+    border: black 1px solid;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}
+
+.icon {
+  cursor: text;
+
+  &.left {
+    left: 8px;
+
+    & + input[type="text"] {
+      padding-left: 32px;
+    }
+  }
+
+  &.right {
+    right: 8px;
+  }
+}
+
+.disabled {
+  input[type="text"] {
+    border-color: #aaa;
+    cursor: not-allowed;
+  }
+}
