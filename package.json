@@ -1,6 +1,6 @@
 {
   "name": "@avarona/react-components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
@@ -13,13 +13,13 @@
   },
   "author": "avarona",
   "scripts": {
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --extensions '.ts,.tsx'",
-    "rollup": "rollup -c",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "start:storybook": "start-storybook -p 9009 -s public",
+    "build": "rollup -c",
+    "build:storybook": "build-storybook -s public",
+    "test": "react-scripts test --watchAll=false",
+    "test:watch": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,12 +49,15 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/classnames": "^2.2.9",
+    "@types/enzyme": "^3.10.4",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/storybook__react": "^5.2.1",
     "classnames": "^2.2.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
