@@ -4,16 +4,18 @@ import babel from "rollup-plugin-babel";
 import commonjs from "rollup-plugin-commonjs";
 import pkg from "./package.json";
 
+const ENV = process.env.NODE_ENV;
+
 export default {
   input: "src/lib/index.ts",
   output: [
     {
-      file: pkg.main,
+      file: ENV === "production" ? pkg.main : "build/index.js",
       format: "cjs",
       sourcemap: true
     },
     {
-      file: pkg.module,
+      file: ENV === "production" ? pkg.module : "build/index.es.js",
       format: "es",
       sourcemap: true
     }
