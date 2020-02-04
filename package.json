@@ -1,6 +1,6 @@
 {
   "name": "@avarona/react-components",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
@@ -14,9 +14,9 @@
   "author": "avarona",
   "scripts": {
     "start:storybook": "start-storybook -p 9009 -s public",
-    "build": "NODE_ENV=development && rm -rf build && rollup -c",
+    "build": "rm -rf build && rollup -c --environment NODE_ENV:development",
     "build:storybook": "build-storybook -s public",
-    "build:production": "NODE_ENV=production && rm -rf dist && rollup -c --compact",
+    "build:production": "rm -rf dist && rollup -c --compact --environment NODE_ENV:production",
     "test": "react-scripts test --watchAll=false",
     "test:watch": "react-scripts test",
     "test:coverage": "react-scripts test --coverage",
