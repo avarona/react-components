@@ -22,7 +22,7 @@ export const _Button = () => (
     </Button>
 
     <Button onClick={action("clicked")} disabled={true}>
-      Danger
+      Disabled
     </Button>
   </>
 );

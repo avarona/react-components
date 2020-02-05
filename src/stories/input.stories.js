@@ -1,7 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { Input } from "../lib";
-import alarmPNG from "../assets/alarm/16x16.png";
 import { ReactComponent as alarmSVG } from "../assets/alarm/alarm-outline.svg";
 
 export default {
@@ -11,9 +10,13 @@ export default {
 
 export const _Input = () => (
   <>
-    <Input onChange={action("text")} width={150} />
+    <Input
+      onChange={action("text")}
+      width={150}
+      placeholder='type something...'
+    />
     <br />
-    <Input onChange={action("text")} width={250} leftIcon={alarmPNG} />
+    <Input onChange={action("text")} width={250} leftIcon={alarmSVG} />
     <br />
     <Input onChange={action("text")} width={350} rightIcon={alarmSVG} />
     <br />

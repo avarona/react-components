@@ -12,6 +12,7 @@ type Props = {
   leftIcon?: string;
   rightIcon?: string;
   disabled?: boolean;
+  placeholder?: string;
 };
 
 const Input = ({
@@ -22,7 +23,8 @@ const Input = ({
   leftIcon,
   rightIcon,
   disabled,
-  onKeyPress
+  onKeyPress,
+  placeholder
 }: Props) => {
   const [text, setText] = React.useState(defaultValue || "");
 
@@ -34,13 +36,18 @@ const Input = ({
       })}
     >
       {leftIcon && (
-        <Icon addClass={classnames(styles.icon, styles.left)} img={leftIcon} />
+        <Icon
+          addClass={classnames(styles.icon, styles.left)}
+          img={leftIcon}
+          size={20}
+        />
       )}
 
       {rightIcon && (
         <Icon
           addClass={classnames(styles.icon, styles.right)}
           img={rightIcon}
+          size={20}
         />
       )}
 
@@ -48,6 +55,7 @@ const Input = ({
         type='text'
         value={text}
         disabled={disabled}
+        placeholder={placeholder}
         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
           setText(e.currentTarget.value);
           onChange && onChange();

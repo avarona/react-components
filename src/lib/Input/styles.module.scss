@@ -8,13 +8,14 @@
     height: 40px;
     width: 100%;
     padding: 0 4px 0 8px;
-    border: black 1px solid;
+    border: #d9d9d6 1px solid;
     border-radius: 4px;
     font-size: 14px;
   }
 }
 
 .icon {
+  position: absolute;
   cursor: text;
 
   &.left {
@@ -27,6 +28,10 @@
 
   &.right {
     right: 8px;
+
+    & + input[type="text"] {
+      padding-right: 32px;
+    }
   }
 }
 
