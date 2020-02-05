@@ -1,11 +1,12 @@
 .toggleSwitch {
   display: inline-flex;
   align-items: center;
-  background: grey;
-  border: 4px solid black;
+  background: #cccecf;
+  padding: 4px;
   border-radius: 25px;
   left: 4px;
   cursor: pointer;
+  transition: background 0.2s ease-in-out;
 }
 
 .slider {
@@ -24,4 +25,8 @@
   &:checked + .slider {
     transform: translateX(100%);
   }
+}
+
+.toggled {
+  background: #00b388;
 }
