@@ -5,7 +5,7 @@ import Icon from "./";
 
 describe("Icon Component", () => {
   it("renders", () => {
-    const wrapper = shallow(<Icon>Click Me!</Icon>);
+    const wrapper = shallow(<Icon img='an image' />);
 
     expect(wrapper.html()).toMatchSnapshot();
   });

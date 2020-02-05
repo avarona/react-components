@@ -1,20 +1,28 @@
 import * as React from "react";
-import classnames from "classnames";
-import styles from "./styles.module.scss";
 
 type Props = {
+  dataTest?: string;
   addClass?: string;
   img: any;
   alt?: string;
+  size?: number;
 };
 
-const Icon = ({ addClass, img, alt }: Props) => {
+const Icon = ({ addClass, img, alt, size, dataTest }: Props) => {
   const SVG = typeof img === "object" && img;
+  const datatest = dataTest ? `${dataTest}-icon` : "icon-container";
 
-  return SVG ? (
-    <SVG className={classnames(addClass, styles.icon)} />
-  ) : (
-    <img className={classnames(addClass, styles.icon)} src={img} alt={alt} />
+  const Component = () =>
+    SVG ? (
+      <SVG data-test={"icon"} />
+    ) : (
+      <img src={img} alt={alt} data-test={"icon"} />
+    );
+
+  return (
+    <div className={addClass} style={{ width: size }} data-test={datatest}>
+      <Component />
+    </div>
   );
 };
 
